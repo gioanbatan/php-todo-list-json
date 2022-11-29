@@ -30,7 +30,9 @@
                 <div class="col-6">
                     <ul>
                         <li v-for="todo in todoList">
-                            {{ todo.text }}
+                            <span :class="{'is-done': todo.done}">
+                                {{ todo.text }}
+                            </span>
                         </li>
                     </ul>
                 </div>

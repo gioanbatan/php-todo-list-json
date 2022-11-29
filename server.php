@@ -8,7 +8,7 @@ $todo_list = json_decode($string, true);
 if (isset($_POST["text"])) {
     $add_todo = [
         "text" => $_POST["text"],
-        "done" => $_POST["done"]
+        "done" => false
     ];
     $todo_list[] = $add_todo;
 

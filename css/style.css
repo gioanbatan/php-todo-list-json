@@ -13,8 +13,12 @@ li {
     list-style: none;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #ffdd99;
     text-shadow: 2px 2px #00000070;
 
     border-bottom: 2px solid #ffffff;
+}
+
+.is-done {
+    text-decoration: line-through;
 }

@@ -25,22 +25,10 @@
     },
     {
         "text": "e",
-        "done": "false"
+        "done": false
     },
     {
-        "text": "f",
-        "done": "false"
-    },
-    {
-        "text": "e",
-        "done": "false"
-    },
-    {
-        "text": "f",
-        "done": "false"
-    },
-    {
-        "text": "f",
-        "done": "false"
+        "text": "fewf",
+        "done": false
     }
 ]
