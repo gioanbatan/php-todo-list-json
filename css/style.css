@@ -8,3 +8,13 @@
 body {
     background-color: lightblue;
 }
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px #00000070;
+
+    border-bottom: 2px solid #ffffff;
+}

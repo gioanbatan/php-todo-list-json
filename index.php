@@ -23,9 +23,19 @@
 
 <body>
     <main id="app">
-        <?php
-        echo "ready";
-        ?>
+        <div class="container">
+            <h1 class="text-center my-3">ToDo List</h1>
+
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <ul>
+                        <li v-for="todo in todoList">
+                            {{ todo }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="js/script.js"></script>
