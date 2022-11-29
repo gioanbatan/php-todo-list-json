@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <main class="app">
+    <main id="app">
         <?php
         echo "ready";
         ?>
