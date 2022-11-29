@@ -1,6 +1,11 @@
 <?php
 $test = ["TestServer", "SecondtestServer"];
 
+if (isset($_POST["newTodo"])) {
+    $add_Todo = $_POST["newTodo"];
+    $test[] = $add_Todo;
+}
+
 // Json encoding
 $convertedInJson = json_encode($test);
 

@@ -35,6 +35,16 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="addingTodo d-flex justify-content-between">
+                        <input type="text" id="add-todo" name="add-todo" placeholder="Add new ToDo" aria-label="Add new ToDo" v-model="inputText" @keyup.enter="addTodo">
+
+                        <button class="btn btn-primary" @click="addTodo">ADD</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
