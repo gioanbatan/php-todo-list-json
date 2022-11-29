@@ -30,7 +30,7 @@
                 <div class="col-6">
                     <ul>
                         <li v-for="todo in todoList">
-                            {{ todo }}
+                            {{ todo.text }}
                         </li>
                     </ul>
                 </div>

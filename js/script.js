@@ -11,13 +11,13 @@ createApp({
         axios.get("server.php")
             .then((resp) => {
                 this.todoList = resp.data;
-                console.log(this.todoList);
             });
     },
     methods: {
         addTodo() {
             const data = {
-                newTodo: this.inputText,
+                text: this.inputText,
+                done: false
             };
 
             axios
