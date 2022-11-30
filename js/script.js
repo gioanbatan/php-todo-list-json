@@ -28,6 +28,21 @@ createApp({
                     this.todoList = resp.data;
                     this.inputText = "";
                 })
+        },
+        doneToggle(index) {
+            const data = {
+                index: index
+            }
+
+            console.log("aqui", index);
+
+            axios
+                .post("server.php", data, {
+                    headers: { "Content-Type": "multipart/form-data" }
+                })
+                .then((resp) => {
+                    this.todoList = resp.data;
+                })
         }
     }
 }).mount("#app");

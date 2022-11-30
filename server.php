@@ -13,6 +13,12 @@ if (isset($_POST["text"])) {
     $todo_list[] = $add_todo;
 
     file_put_contents("todo.json", json_encode($todo_list));
+} else if (isset($_POST["index"])) {
+    $item = $_POST["index"];
+
+    $todo_list[$item]["done"] = !$todo_list[$item]["done"];
+
+    file_put_contents("todo.json", json_encode($todo_list));
 }
 
 // Json encoding

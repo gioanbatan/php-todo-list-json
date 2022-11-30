@@ -29,8 +29,8 @@
             <div class="row justify-content-center">
                 <div class="col-6">
                     <ul>
-                        <li v-for="todo in todoList">
-                            <span :class="{'is-done': todo.done}">
+                        <li v-for="todo, index in todoList">
+                            <span :class="{'is-done': todo.done}" @click="doneToggle(index)">
                                 {{ todo.text }}
                             </span>
                         </li>
